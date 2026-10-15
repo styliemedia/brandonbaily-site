@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brandon Baily | Stunt rider, arena MC and photographer</title>
-  <meta name="description" content="Brandon Baily: stunt rider, arena MC, photographer and web builder based in Kent. Book a show, commentary or a shoot.">
-  <meta property="og:title" content="Brandon Baily">
-  <meta property="og:description" content="Stunt rider, arena MC, photographer and web builder based in Kent.">
+  <title>Brandon Baily | Arena MC and stunt rider</title>
+  <meta name="description" content="Brandon Baily: arena MC and stunt rider based in Kent. Live commentary and stunt entertainment for shows, festivals and events across the UK.">
+  <meta property="og:title" content="Brandon Baily | Arena MC and stunt rider">
+  <meta property="og:description" content="Live commentary and stunt entertainment for shows, festivals and events across the UK.">
   <meta property="og:url" content="https://brandonbaily.co.uk/">
   <link rel="canonical" href="https://brandonbaily.co.uk/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Libre+Caslon+Text:wght@700&family=Manrope:wght@400;500;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
   <a class="topbar__name" href="#top">Brandon Baily</a>
   <nav class="topbar__nav" aria-label="Main">
     <a href="#services">What I do</a>
-    <a href="#arena">For organisers</a>
+    <a href="#organisers">For organisers</a>
     <a href="#instagram">Instagram</a>
     <a class="topbar__book" href="#book">Book me</a>
   </nav>
@@ -30,56 +30,46 @@
 <main id="top">
 
   <!-- HERO
-       To use a photo: put it in /assets/hero.jpg and uncomment the
-       --hero-photo line in styles.css. Landscape, at least 2000px wide. -->
+       To add a photo behind the name: put it in /assets/hero.jpg and
+       uncomment the --hero-photo line at the top of styles.css. -->
   <section class="hero">
     <div class="hero__inner">
-      <p class="hero__intro">Stunt rider and arena MC, based in Kent</p>
+      <p class="label">Arena MC and stunt rider</p>
       <h1 class="hero__name">Brandon<br>Baily</h1>
-      <div class="plate" aria-hidden="true"><span>BB</span></div>
-      <p class="hero__lede">I ride the stunts, I talk the crowd through them, and I shoot the photos afterwards. Book one of those or all three.</p>
+      <p class="hero__shout">give us a wave, give us a cheer, give us a shout!</p>
+      <p class="hero__lede">I keep the crowd on their feet from the first wheelie to the final jump, on the mic or on the bike.</p>
       <div class="hero__actions">
-        <a class="btn btn--plate" href="#book">Book a show</a>
-        <a class="btn btn--ghost" href="https://www.instagram.com/thestuntographer/" rel="noopener">Watch on Instagram</a>
+        <a class="btn btn--orange" href="#book">Book me</a>
+        <a class="btn btn--outline" href="https://www.instagram.com/thestuntographer/" rel="noopener">Watch on Instagram</a>
       </div>
     </div>
-    <svg class="hero__tracks" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M-20 170 C 250 120, 420 40, 700 90 S 1100 180, 1240 60" />
-      <path d="M-20 190 C 250 140, 420 60, 700 110 S 1100 200, 1240 80" />
-    </svg>
   </section>
 
   <section class="services" id="services" aria-labelledby="services-title">
-    <h2 id="services-title" class="section-title">What I do</h2>
+    <p class="label">What I do</p>
+    <h2 id="services-title" class="section-title">On the mic and on the bike</h2>
     <ul class="services__list">
+      <li>
+        <h3>Arena MC</h3>
+        <p>Live commentary that keeps the crowd with you all day. I build the noise before each act, talk people through every stunt, and keep things moving between shows.</p>
+      </li>
       <li>
         <h3>Stunt riding</h3>
         <p>Motorbike stunt displays for shows, festivals and events. Riding with Stunt Shows UK and Moto-Stunts International.</p>
       </li>
-      <li>
-        <h3>Arena MC</h3>
-        <p>Live commentary that keeps the crowd with you, between acts and through the big moments.</p>
-      </li>
-      <li>
-        <h3>Photography</h3>
-        <p>Action and event photography as The StuntOgrapher. Fast-moving subjects are my day job.</p>
-      </li>
-      <li>
-        <h3>Websites</h3>
-        <p>Simple, fast websites for performers, events and small businesses. This one included.</p>
-      </li>
     </ul>
   </section>
 
-  <section class="arena" id="arena" aria-labelledby="arena-title">
-    <div class="arena__copy">
-      <h2 id="arena-title" class="section-title">For event organisers</h2>
-      <p>Send me your timetable and arena size, and I'll tell you what fits. I can supply a full show, commentary for your whole day, or photos for your marketing next year.</p>
+  <section class="organisers" id="organisers" aria-labelledby="organisers-title">
+    <div class="organisers__copy">
+      <p class="label">For event organisers</p>
+      <h2 id="organisers-title" class="section-title">Send me your timetable</h2>
+      <p>Tell me your arena size and running order, and I'll tell you what fits: commentary for your whole day, a stunt display, or both.</p>
     </div>
     <!-- EDIT: check each line is true for you, then delete this comment. -->
-    <dl class="arena__facts">
-      <div><dt>Shows</dt><dd>Full stunt displays or single acts</dd></div>
-      <div><dt>Commentary</dt><dd>Single arena or a full day's programme</dd></div>
+    <dl class="organisers__facts">
+      <div><dt>Commentary</dt><dd>One arena or a full day's programme</dd></div>
+      <div><dt>Stunt shows</dt><dd>Full displays or single acts</dd></div>
       <div><dt>Paperwork</dt><dd>Risk assessments and insurance details on request</dd></div>
       <div><dt>Based</dt><dd>Kent, travelling UK-wide</dd></div>
     </dl>
@@ -87,32 +77,36 @@
 
   <section class="insta" id="instagram" aria-labelledby="insta-title">
     <div class="insta__head">
-      <h2 id="insta-title" class="section-title">Latest from the arena</h2>
-      <p>Most of my riding and photography goes up on Instagram first.</p>
-      <a class="btn btn--plate" href="https://www.instagram.com/thestuntographer/" rel="noopener">Follow @TheStuntOgrapher</a>
+      <div>
+        <p class="label">Instagram</p>
+        <h2 id="insta-title" class="section-title">Latest from the arena</h2>
+      </div>
+      <a class="btn btn--orange" href="https://www.instagram.com/thestuntographer/" rel="noopener">Follow on Instagram</a>
     </div>
     <!-- To show real posts: on Instagram open a post, choose "Embed",
          copy the code and paste it in place of one of the tiles below.
          Then uncomment the embed.js script at the bottom of this page. -->
     <div class="insta__grid">
+      <a class="tile" href="https://www.instagram.com/thestuntographer/" rel="noopener"><span>On the mic</span></a>
       <a class="tile" href="https://www.instagram.com/thestuntographer/" rel="noopener"><span>Stunt clips</span></a>
       <a class="tile" href="https://www.instagram.com/thestuntographer/" rel="noopener"><span>Show days</span></a>
-      <a class="tile" href="https://www.instagram.com/thestuntographer/" rel="noopener"><span>Photography</span></a>
     </div>
   </section>
 
   <section class="book" id="book" aria-labelledby="book-title">
-    <h2 id="book-title" class="book__title">Booking for next season?</h2>
-    <p class="book__lede">Tell me the date, the venue and what you have in mind. I'll reply within two working days.</p>
-    <a class="book__email" href="mailto:info@brandonbaily.co.uk?subject=Booking%20enquiry">info@brandonbaily.co.uk</a>
-    <p class="book__alt">Or message me on <a href="https://www.instagram.com/thestuntographer/" rel="noopener">Instagram</a>.</p>
+    <div class="book__inner">
+      <h2 id="book-title" class="book__title">Booking for next season?</h2>
+      <p class="book__lede">Send me the date, the venue and what you have in mind. I'll reply within two working days.</p>
+      <a class="book__email" href="mailto:info@brandonbaily.co.uk?subject=Booking%20enquiry">info@brandonbaily.co.uk</a>
+      <p class="book__alt">Or message me on <a href="https://www.instagram.com/thestuntographer/" rel="noopener">Instagram</a>.</p>
+    </div>
   </section>
 
 </main>
 
 <footer class="footer">
   <p>&copy; <span id="year">2026</span> Brandon Baily</p>
-  <p>Built by me, hosted on Cloudflare</p>
+  <p>Kent, UK</p>
 </footer>
 
 <script src="script.js" defer></script>

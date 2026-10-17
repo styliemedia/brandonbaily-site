@@ -186,3 +186,19 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .lightbox__next { right: clamp(4px, 2vw, 24px); top: 50%; transform: translateY(-50%); }
 .lightbox .lightbox__close { top: 16px; right: 16px; width: 48px; height: 48px; font-size: 1.25rem; background: var(--orange); color: var(--black); }
 .lightbox__count { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); font: 700 .8rem/1 var(--label); letter-spacing: .3em; color: var(--muted); }
+
+/* Links under a skill (Car stunts / Quad stunts) */
+.skills__links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.btn--line { padding: 11px 18px; font-size: .9375rem; color: var(--orange); box-shadow: inset 0 0 0 2px var(--orange); }
+.btn--line:hover { background: var(--orange); color: var(--black); }
+
+/* Car and quad stunt pages */
+.subhero { padding-top: clamp(56px, 8vw, 104px); }
+.subhero .label a { text-decoration: none; }
+.subhero__title { font: 900 clamp(4rem, 15vw, 11rem)/.86 var(--display); text-transform: uppercase; color: var(--orange); margin-left: -.03em; }
+.subhero__lede { max-width: 52ch; margin-top: clamp(32px, 4vw, 48px); font-size: 1.25rem; line-height: 1.55; color: var(--soft); }
+.subhero__facts { max-width: 760px; margin-top: 40px; border-top: 2px solid var(--orange); }
+.subhero__facts div { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.subhero__facts dt { font-weight: 700; }
+.subhero__facts dd { color: var(--muted); }
+.topbar__nav a[aria-current="page"] { color: var(--orange); }

@@ -7,6 +7,7 @@
   --black-2: #161616;
   --black-3: #1b1b1b;
   --orange: #ff6a13;
+  --stylie-blue: #3d8bff;
   --chalk: #f2f2f0;
   --soft: #d4d4cf;
   --muted: #b5b5b0;
@@ -114,6 +115,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .skills li { padding: 22px 0; border-bottom: 1px solid var(--line); }
 .skills h3 { font: 900 2rem/1 var(--display); text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
 .skills p { color: var(--muted); font-size: .975rem; }
+/* Photography is a Stylie Media service, so it takes Stylie blue instead of orange. */
+.skills__stylie h3 { color: var(--stylie-blue); }
 
 /* Tour dates */
 .dates { border-top: 2px solid var(--orange); }

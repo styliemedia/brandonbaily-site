@@ -4,101 +4,413 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Brandon Baily | Arena MC and stunt rider</title>
-  <meta name="description" content="Brandon Baily: arena MC and stunt rider based in Kent. Live commentary and stunt entertainment for shows, festivals and events across the UK.">
+  <meta name="description" content="Brandon Baily: arena MC and motorbike stunt rider based in Kent. Live commentary and stunt shows for county shows, festivals and motor events across the UK and overseas.">
   <meta property="og:title" content="Brandon Baily | Arena MC and stunt rider">
-  <meta property="og:description" content="Live commentary and stunt entertainment for shows, festivals and events across the UK.">
+  <meta property="og:description" content="Live commentary and stunt shows for county shows, festivals and motor events.">
+  <meta property="og:image" content="https://brandonbaily.co.uk/assets/hero.jpg">
   <meta property="og:url" content="https://brandonbaily.co.uk/">
   <link rel="canonical" href="https://brandonbaily.co.uk/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Libre+Caslon+Text:wght@700&family=Manrope:wght@400;500;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Libre+Caslon+Text:wght@700&family=Manrope:wght@400;500;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="topbar">
-  <a class="topbar__name" href="#top">Brandon Baily</a>
-  <nav class="topbar__nav" aria-label="Main">
-    <a href="#services">What I do</a>
-    <a href="#organisers">For organisers</a>
-    <a href="#instagram">Instagram</a>
-    <a class="topbar__book" href="#book">Book me</a>
-  </nav>
+  <div class="topbar__inner">
+    <a class="topbar__name" href="#top">Brandon <span>Baily</span></a>
+    <nav class="topbar__nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#dates">Dates</a>
+      <a href="#worked">Worked with</a>
+      <a href="#instagram">Instagram</a>
+    </nav>
+    <a class="btn btn--orange btn--small" href="#book">Book me</a>
+  </div>
 </header>
 
 <main id="top">
 
-  <!-- HERO
-       To add a photo behind the name: put it in /assets/hero.jpg and
-       uncomment the --hero-photo line at the top of styles.css. -->
-  <section class="hero">
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__photo">
+      <img src="assets/hero.jpg" alt="Brandon Baily in an orange stunt helmet and suit" width="1200" height="1801">
+    </div>
     <div class="hero__inner">
-      <p class="label">Arena MC and stunt rider</p>
-      <h1 class="hero__name">Brandon<br>Baily</h1>
+      <p class="label">Arena MC · Stunt rider</p>
+      <h1 class="hero__name">Brandon<br><span>Baily</span></h1>
       <p class="hero__shout">give us a wave, give us a cheer, give us a shout!</p>
-      <p class="hero__lede">I keep the crowd on their feet from the first wheelie to the final jump, on the mic or on the bike.</p>
       <div class="hero__actions">
         <a class="btn btn--orange" href="#book">Book me</a>
-        <a class="btn btn--outline" href="https://www.instagram.com/itsbrandonbaily/" rel="noopener">Watch on Instagram</a>
+        <a class="btn btn--outline" href="#dates">See tour dates</a>
       </div>
     </div>
   </section>
 
-  <section class="services" id="services" aria-labelledby="services-title">
-    <p class="label">What I do</p>
-    <h2 id="services-title" class="section-title">On the mic and on the bike</h2>
-    <ul class="services__list">
-      <li>
-        <h3>Arena MC</h3>
-        <p>Live commentary that keeps the crowd with you all day. I build the noise before each act, talk people through every stunt, and keep things moving between shows.</p>
-      </li>
-      <li>
-        <h3>Stunt riding</h3>
-        <p>Motorbike stunt displays for shows, festivals and events. Riding with Stunt Shows UK and Moto-Stunts International.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="organisers" id="organisers" aria-labelledby="organisers-title">
-    <div class="organisers__copy">
-      <p class="label">For event organisers</p>
-      <h2 id="organisers-title" class="section-title">Send me your timetable</h2>
-      <p>Tell me your arena size and running order, and I'll tell you what fits: commentary for your whole day, a stunt display, or both.</p>
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="about">
+      <figure class="about__media">
+        <div class="about__frame">
+          <img src="assets/hero.jpg" alt="" loading="lazy" style="object-position:50% 20%">
+        </div>
+        <figcaption>live from the arena</figcaption>
+      </figure>
+      <div>
+        <p class="label">About me</p>
+        <h2 id="about-title" class="title">On the mic and on the bike</h2>
+        <div class="about__text">
+          <p>I'm an arena MC and motorbike stunt rider based in Kent. Most weekends from spring to autumn you'll find me at a county show, festival or motor event somewhere in the UK, either holding the microphone or holding a wheelie.</p>
+          <p>Because I ride as well as commentate, I know what's coming next in a stunt show, so I can build the crowd at the right moment and talk people through every trick.</p>
+        </div>
+        <ul class="skills">
+          <li><h3>Arena MC</h3><p>Live commentary that keeps the crowd with you all day, from the first act to the last.</p></li>
+          <li><h3>Stunt riding</h3><p>Motorbike stunt displays with Stunt Shows UK and Moto-Stunts International.</p></li>
+        </ul>
+      </div>
     </div>
-    <!-- EDIT: check each line is true for you, then delete this comment. -->
-    <dl class="organisers__facts">
-      <div><dt>Commentary</dt><dd>One arena or a full day's programme</dd></div>
-      <div><dt>Stunt shows</dt><dd>Full displays or single acts</dd></div>
-      <div><dt>Paperwork</dt><dd>Risk assessments and insurance details on request</dd></div>
-      <div><dt>Based</dt><dd>Kent, travelling UK-wide</dd></div>
-    </dl>
   </section>
 
-  <section class="insta" id="instagram" aria-labelledby="insta-title">
-    <div class="insta__head">
+  <section id="dates" class="band" aria-labelledby="dates-title">
+    <div class="section">
+      <div class="section__head">
+        <div>
+          <p class="label">Tour dates</p>
+          <h2 id="dates-title" class="title">Where to catch me</h2>
+        </div>
+        <p class="aside">come and say hello!</p>
+      </div>
+      <!-- Dates update themselves: anything before today moves to "Earlier this year".
+           To add a date, copy one <li class="date"> block and change it. -->
+      <ul class="dates" id="upcoming">
+        <li class="date" data-date="2026-04-03">
+          <p class="date__when"><span class="date__day">03</span><span class="date__month">Apr 26</span></p>
+          <div class="date__what">
+            <h3>Pickering Showground</h3>
+            <p>RA Monster Events · 3 Apr – 6 Apr</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-04-11">
+          <p class="date__when"><span class="date__day">11</span><span class="date__month">Apr 26</span></p>
+          <div class="date__what">
+            <h3>Plumpton Racecourse</h3>
+            <p>RA Monster Events · 11 Apr – 12 Apr</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-04-25">
+          <p class="date__when"><span class="date__day">25</span><span class="date__month">Apr 26</span></p>
+          <div class="date__what">
+            <h3>Carlisle Racecourse</h3>
+            <p>RA Monster Events · 25 Apr – 26 Apr</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-05-02">
+          <p class="date__when"><span class="date__day">02</span><span class="date__month">May 26</span></p>
+          <div class="date__what">
+            <h3>Lingfield Park Racecourse</h3>
+            <p>RA Monster Events · 2 May – 4 May</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-05-09">
+          <p class="date__when"><span class="date__day">09</span><span class="date__month">May 26</span></p>
+          <div class="date__what">
+            <h3>Isle of Wight</h3>
+            <p>RA Monster Events · 9 May – 10 May</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-05-16">
+          <p class="date__when"><span class="date__day">16</span><span class="date__month">May 26</span></p>
+          <div class="date__what">
+            <h3>Orsett Showground</h3>
+            <p>RA Monster Events · 16 May – 17 May</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-05-23">
+          <p class="date__when"><span class="date__day">23</span><span class="date__month">May 26</span></p>
+          <div class="date__what">
+            <h3>Taunton Racecourse</h3>
+            <p>RA Monster Events · 23 May – 24 May</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-05-30">
+          <p class="date__when"><span class="date__day">30</span><span class="date__month">May 26</span></p>
+          <div class="date__what">
+            <h3>Leicester Racecourse</h3>
+            <p>RA Monster Events · 30 May – 31 May</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-06-06">
+          <p class="date__when"><span class="date__day">06</span><span class="date__month">Jun 26</span></p>
+          <div class="date__what">
+            <h3>Haydock Park Racecourse</h3>
+            <p>RA Monster Events · 6 Jun – 7 Jun</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-06-13">
+          <p class="date__when"><span class="date__day">13</span><span class="date__month">Jun 26</span></p>
+          <div class="date__what">
+            <h3>Manston Airport</h3>
+            <p>RA Monster Events · 13 Jun – 14 Jun</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-06-20">
+          <p class="date__when"><span class="date__day">20</span><span class="date__month">Jun 26</span></p>
+          <div class="date__what">
+            <h3>Bath Racecourse</h3>
+            <p>RA Monster Events · 20 Jun – 21 Jun</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-07-04">
+          <p class="date__when"><span class="date__day">04</span><span class="date__month">Jul 26</span></p>
+          <div class="date__what">
+            <h3>Chepstow Racecourse</h3>
+            <p>RA Monster Events · 4 Jul – 5 Jul</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-07-11">
+          <p class="date__when"><span class="date__day">11</span><span class="date__month">Jul 26</span></p>
+          <div class="date__what">
+            <h3>Ffos Las Racecourse</h3>
+            <p>RA Monster Events · 11 Jul – 12 Jul</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-07-18">
+          <p class="date__when"><span class="date__day">18</span><span class="date__month">Jul 26</span></p>
+          <div class="date__what">
+            <h3>Southwell Racecourse</h3>
+            <p>RA Monster Events · 18 Jul – 19 Jul</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-08-01">
+          <p class="date__when"><span class="date__day">01</span><span class="date__month">Aug 26</span></p>
+          <div class="date__what">
+            <h3>Newcastle Racecourse</h3>
+            <p>RA Monster Events · 1 Aug – 2 Aug</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-08-08">
+          <p class="date__when"><span class="date__day">08</span><span class="date__month">Aug 26</span></p>
+          <div class="date__what">
+            <h3>Great Harwood Showground</h3>
+            <p>RA Monster Events · 8 Aug – 9 Aug</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-08-15">
+          <p class="date__when"><span class="date__day">15</span><span class="date__month">Aug 26</span></p>
+          <div class="date__what">
+            <h3>Thornborough Centre</h3>
+            <p>RA Monster Events · 15 Aug – 16 Aug</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-08-22">
+          <p class="date__when"><span class="date__day">22</span><span class="date__month">Aug 26</span></p>
+          <div class="date__what">
+            <h3>Market Rasen Racecourse</h3>
+            <p>RA Monster Events · 22 Aug – 23 Aug</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-09-05">
+          <p class="date__when"><span class="date__day">05</span><span class="date__month">Sep 26</span></p>
+          <div class="date__what">
+            <h3>South of England Showground</h3>
+            <p>RA Monster Events · 5 Sep – 6 Sep</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-09-12">
+          <p class="date__when"><span class="date__day">12</span><span class="date__month">Sep 26</span></p>
+          <div class="date__what">
+            <h3>Yeovil Showground</h3>
+            <p>RA Monster Events · 12 Sep – 13 Sep</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-09-19">
+          <p class="date__when"><span class="date__day">19</span><span class="date__month">Sep 26</span></p>
+          <div class="date__what">
+            <h3>Herts County Showground</h3>
+            <p>RA Monster Events · 19 Sep – 20 Sep</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-09-26">
+          <p class="date__when"><span class="date__day">26</span><span class="date__month">Sep 26</span></p>
+          <div class="date__what">
+            <h3>Great Yarmouth Racecourse</h3>
+            <p>RA Monster Events · 26 Sep – 27 Sep</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-10-10">
+          <p class="date__when"><span class="date__day">10</span><span class="date__month">Oct 26</span></p>
+          <div class="date__what">
+            <h3>Great Harwood Showground, Lancashire</h3>
+            <p>RA Monster Events · 10 Oct – 11 Oct</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-10-24">
+          <p class="date__when"><span class="date__day">24</span><span class="date__month">Oct 26</span></p>
+          <div class="date__what">
+            <h3>Uttoxeter Racecourse, Staffordshire</h3>
+            <p>RA Monster Events · 24 Oct – 25 Oct</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-10-31">
+          <p class="date__when"><span class="date__day">31</span><span class="date__month">Oct 26</span></p>
+          <div class="date__what">
+            <h3>Manston Airport (Halloween)</h3>
+            <p>RA Monster Events · 31 Oct – 1 Nov</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-11-04">
+          <p class="date__when"><span class="date__day">04</span><span class="date__month">Nov 26</span></p>
+          <div class="date__what">
+            <h3>Plumpton Racecourse</h3>
+            <p>RA Monster Events · 4 Nov</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2026-11-07">
+          <p class="date__when"><span class="date__day">07</span><span class="date__month">Nov 26</span></p>
+          <div class="date__what">
+            <h3>Hertfordshire Showground</h3>
+            <p>RA Monster Events · 7 Nov</p>
+          </div>
+          <span class="date__role">RA Monster Events</span>
+          <a class="date__link" href="https://ra-dates.thestuntridersgroup.co.uk/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="date" data-date="2027-01-01">
+          <p class="date__when"><span class="date__day">01</span><span class="date__month">Jan 27</span></p>
+          <div class="date__what">
+            <h3>London New Year&#x27;s Day Parade</h3>
+            <p>Central London · 1 Jan 2027</p>
+          </div>
+          <span class="date__role">London Parade</span>
+          <a class="date__link" href="https://lnydp.com/" rel="noopener">Event info <span aria-hidden="true">→</span></a>
+        </li>
+      </ul>
+      <div id="past-wrap" hidden>
+        <p class="label label--quiet">Earlier this year</p>
+        <ul class="past" id="past"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="worked" class="rule" aria-labelledby="worked-title">
+   <div class="section">
+    <p class="label">Worked with</p>
+    <h2 id="worked-title" class="title">Teams and shows</h2>
+    <ul class="logos">
+        <li><span>RA Monster Events</span></li>
+        <li><span>Findley Productions Film Festival</span></li>
+        <li><span>Slingshot MT</span></li>
+        <li><span>London Parade</span></li>
+        <li><span>Shift &amp; Drift Car Show</span></li>
+        <li><span>Stunt Shows UK</span></li>
+        <li><span>Grizzle Squade</span></li>
+        <li><span>Muscat Festival</span></li>
+    </ul>
+    <div class="locations">
+      <div>
+        <p class="label">Locations</p>
+        <h3 class="title title--small">Arenas I've worked</h3>
+        <p class="muted">Based in Kent, working across the UK and internationally.</p>
+      </div>
+      <ul class="locations__list">
+        <li>England</li>
+        <li>Scotland</li>
+        <li>Wales</li>
+        <li>Isle of Man</li>
+        <li>Isle of Wight</li>
+        <li>Spain</li>
+        <li>Oman</li>
+        <li>Bahrain</li>
+        <li>Middle East</li>
+        <li>Nigeria</li>
+      </ul>
+    </div>
+   </div>
+  </section>
+
+  <section id="instagram" class="section" aria-labelledby="instagram-title">
+    <div class="section__head">
       <div>
         <p class="label">Instagram</p>
-        <h2 id="insta-title" class="section-title">Latest from the arena</h2>
+        <h2 id="instagram-title" class="title">Latest from the arena</h2>
       </div>
       <a class="btn btn--orange" href="https://www.instagram.com/itsbrandonbaily/" rel="noopener">Follow @itsbrandonbaily</a>
     </div>
-    <!-- To show real posts: on Instagram open a post, choose "Embed",
-         copy the code and paste it in place of one of the tiles below.
-         Then uncomment the embed.js script at the bottom of this page. -->
-    <div class="insta__grid">
-      <a class="tile" href="https://www.instagram.com/itsbrandonbaily/" rel="noopener"><span>On the mic</span></a>
-      <a class="tile" href="https://www.instagram.com/itsbrandonbaily/" rel="noopener"><span>Stunt clips</span></a>
-      <a class="tile" href="https://www.instagram.com/itsbrandonbaily/" rel="noopener"><span>Show days</span></a>
+    <div class="ig">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DegZ7GqIaF8/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DegZ7GqIaF8/" rel="noopener">View this post on Instagram</a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DYDQ4CkCOXT/" data-instgrm-version="14"><a href="https://www.instagram.com/p/DYDQ4CkCOXT/" rel="noopener">View this post on Instagram</a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DeC40OQIDVd/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DeC40OQIDVd/" rel="noopener">View this post on Instagram</a></blockquote>
     </div>
   </section>
 
-  <section class="book" id="book" aria-labelledby="book-title">
-    <div class="book__inner">
+  <section id="book" class="book" aria-labelledby="book-title">
+    <div class="section">
+      <p class="label">For event organisers</p>
       <h2 id="book-title" class="book__title">Booking for next season?</h2>
-      <p class="book__lede">Send me the date, the venue and what you have in mind. I'll reply within two working days.</p>
-      <a class="book__email" href="mailto:info@brandonbaily.co.uk?subject=Booking%20enquiry">info@brandonbaily.co.uk</a>
-      <p class="book__alt">Or message me on <a href="https://www.instagram.com/itsbrandonbaily/" rel="noopener">Instagram</a>.</p>
+      <div class="book__grid">
+        <div>
+          <p class="book__lede">Send me the date, venue, arena size and running order. I'll tell you what fits and reply within two working days.</p>
+          <a class="book__email" href="mailto:info@brandonbaily.co.uk?subject=Booking%20enquiry">info@brandonbaily.co.uk</a>
+        </div>
+        <dl class="book__facts">
+          <div><dt>Commentary</dt><dd>One arena or a full day's programme</dd></div>
+          <div><dt>Stunt shows</dt><dd>Full displays or single acts</dd></div>
+          <div><dt>Paperwork</dt><dd>Risk assessments and insurance on request</dd></div>
+          <div><dt>Based</dt><dd>Kent, travelling UK-wide and overseas</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 
@@ -106,10 +418,18 @@
 
 <footer class="footer">
   <p>&copy; <span id="year">2026</span> Brandon Baily</p>
-  <p>Kent, UK</p>
+  <p><a href="https://www.instagram.com/itsbrandonbaily/" rel="noopener">Instagram</a><span>Kent, UK</span></p>
 </footer>
 
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <img id="lightbox-img" alt="">
+  <button type="button" class="lightbox__prev" aria-label="Previous photo">‹</button>
+  <button type="button" class="lightbox__next" aria-label="Next photo">›</button>
+  <button type="button" class="lightbox__close" aria-label="Close">✕</button>
+  <span class="lightbox__count" id="lightbox-count"></span>
+</div>
+
 <script src="script.js" defer></script>
-<!-- <script async src="https://www.instagram.com/embed.js"></script> -->
+<script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>

@@ -202,3 +202,58 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outlin
 .subhero__facts dt { font-weight: 700; }
 .subhero__facts dd { color: var(--muted); }
 .topbar__nav a[aria-current="page"] { color: var(--orange); }
+
+/* Quad wheelie: Brandon wheelies a quad across the page. SVG + CSS only. */
+.quad-run { position: relative; height: clamp(160px, 19vw, 240px); overflow: hidden; border-top: 1px solid #222; border-bottom: 1px solid #222; background: var(--black-2); }
+.quad-run__ground { position: absolute; left: 0; right: 0; bottom: 18%; border-top: 2px dashed #333; }
+.quad-run__track { position: absolute; left: 0; bottom: 18%; width: clamp(170px, 19vw, 270px); animation: quad-cross 7s linear infinite; }
+.quad { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* colours */
+.quad .tyre { fill: #0b0b0b; stroke: #2b2b2b; stroke-width: 4; }
+.quad .tyre--far { fill: #070707; stroke: #1e1e1e; }
+.quad .rim { fill: var(--orange); }
+.quad .spokes { stroke: #111; stroke-width: 3; }
+.quad .frame { fill: #1d1d1d; }
+.quad .plastics { fill: var(--orange); }
+.quad .seat { fill: #0b0b0b; }
+.quad .bars { stroke: #cfcfca; stroke-width: 5; stroke-linecap: round; fill: none; }
+.quad .leg, .quad .torso, .quad .arm { fill: #2a2f38; }
+.quad .boot { fill: #0b0b0b; }
+.quad .shirt { fill: #f2f2f0; }
+.quad .tie { fill: #7a2a8c; }
+.quad .shell { fill: #0b0b0b; }
+.quad .peak, .quad .chin { fill: var(--orange); }
+.quad .visor { fill: #3a3a3a; }
+.quad__dust circle { fill: #4a4a46; opacity: 0; }
+
+/* motion */
+.quad__body { transform-box: view-box; transform-origin: 72px 180px; animation: quad-wheelie 7s ease-in-out infinite; }
+.quad__wheel { transform-box: fill-box; transform-origin: center; animation: quad-spin .45s linear infinite; }
+.quad__dust circle { transform-box: fill-box; transform-origin: center; animation: quad-dust .9s ease-out infinite; }
+.quad__dust circle:nth-child(2) { animation-delay: .3s; }
+.quad__dust circle:nth-child(3) { animation-delay: .6s; }
+
+@keyframes quad-cross { from { transform: translateX(-110%); } to { transform: translateX(calc(100vw + 10%)); } }
+@keyframes quad-spin { to { transform: rotate(360deg); } }
+@keyframes quad-wheelie {
+  0%, 10% { transform: rotate(0deg); }
+  22% { transform: rotate(-24deg); }
+  32% { transform: rotate(-19deg); }
+  42% { transform: rotate(-23deg); }
+  52% { transform: rotate(-18deg); }
+  62% { transform: rotate(-22deg); }
+  72% { transform: rotate(-19deg); }
+  84%, 100% { transform: rotate(0deg); }
+}
+@keyframes quad-dust {
+  0% { opacity: .7; transform: translate(0, 0) scale(.4); }
+  100% { opacity: 0; transform: translate(-46px, -14px) scale(1.6); }
+}
+
+/* Reduced motion: park the quad mid-wheelie in the middle of the strip */
+@media (prefers-reduced-motion: reduce) {
+  .quad-run__track { animation: none; left: 50%; translate: -50% 0; }
+  .quad__body { animation: none; transform: rotate(-20deg); }
+  .quad__wheel, .quad__dust circle { animation: none; }
+}

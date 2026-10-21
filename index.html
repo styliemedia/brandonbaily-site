@@ -49,6 +49,58 @@
     </div>
   </section>
 
+  <!-- Wheelie animation: pure SVG + CSS, no video. Styles are in styles.css under "Quad wheelie". -->
+  <div class="quad-run" aria-hidden="true">
+    <div class="quad-run__track">
+      <svg class="quad" viewBox="0 -10 320 191" width="320" height="191">
+        <g class="quad__dust">
+          <circle cx="40" cy="176" r="10"/>
+          <circle cx="40" cy="176" r="8"/>
+          <circle cx="40" cy="176" r="12"/>
+        </g>
+        <g class="quad__body">
+          <!-- far-side wheels (it's a quad, so two more peek out behind) -->
+          <circle cx="84" cy="146" r="28" class="tyre tyre--far"/>
+          <circle cx="232" cy="152" r="22" class="tyre tyre--far"/>
+          <!-- rear wheel -->
+          <g class="quad__wheel">
+            <circle cx="72" cy="150" r="30" class="tyre"/>
+            <circle cx="72" cy="150" r="13" class="rim"/>
+            <path d="M72 137v26M59 150h26M63 141l18 18M81 141l-18 18" class="spokes"/>
+          </g>
+          <!-- front wheel -->
+          <g class="quad__wheel">
+            <circle cx="222" cy="156" r="24" class="tyre"/>
+            <circle cx="222" cy="156" r="10" class="rim"/>
+            <path d="M222 146v20M212 156h20M215 149l14 14M229 149l-14 14" class="spokes"/>
+          </g>
+          <!-- chassis -->
+          <path class="frame" d="M48 128 L104 114 L176 116 L238 128 L232 140 L180 140 L150 150 L104 150 L60 142 Z"/>
+          <path class="plastics" d="M40 122 Q70 98 110 110 L104 122 Q72 112 48 132 Z"/>
+          <path class="plastics" d="M176 112 Q214 100 250 122 L240 132 Q212 116 180 124 Z"/>
+          <rect class="seat" x="98" y="100" width="62" height="12" rx="6"/>
+          <!-- handlebars -->
+          <path class="bars" d="M188 116 L200 78 M192 80 L212 74"/>
+          <!-- rider -->
+          <path class="leg" d="M128 106 L168 112 L182 140 L172 144 L160 122 L124 120 Z"/>
+          <path class="boot" d="M168 136 L190 136 L190 146 L170 146 Z"/>
+          <path class="torso" d="M108 104 L128 58 L150 58 L150 66 L134 106 Z"/>
+          <path class="shirt" d="M133 60 L145 60 L139 82 Z"/>
+          <path class="tie" d="M138 62 L141 62 L142 78 L139 81 L137 78 Z"/>
+          <path class="arm" d="M142 66 L178 80 L202 80 L202 88 L176 88 L140 76 Z"/>
+          <!-- helmet -->
+          <g class="helmet">
+            <circle cx="140" cy="40" r="20" class="shell"/>
+            <path class="peak" d="M148 22 L178 30 L176 36 L150 32 Z"/>
+            <path class="visor" d="M146 34 L162 36 L160 46 L144 44 Z"/>
+            <path class="chin" d="M150 50 L166 52 L160 62 L148 58 Z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="quad-run__ground"></div>
+  </div>
+
   <section id="about" class="section" aria-labelledby="about-title">
     <div class="about">
       <figure class="about__media">

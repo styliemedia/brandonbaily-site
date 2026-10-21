@@ -52,49 +52,58 @@
   <!-- Wheelie animation: pure SVG + CSS, no video. Styles are in styles.css under "Quad wheelie". -->
   <div class="quad-run" aria-hidden="true">
     <div class="quad-run__track">
-      <svg class="quad" viewBox="0 -10 320 191" width="320" height="191">
+      <svg class="quad" viewBox="0 -70 260 252" width="260" height="252">
         <g class="quad__dust">
           <circle cx="40" cy="176" r="10"/>
           <circle cx="40" cy="176" r="8"/>
           <circle cx="40" cy="176" r="12"/>
         </g>
+
+        <!-- rider, standing behind the quad (drawn first so the quad sits in front) -->
+        <g class="quad__rider"><g transform="translate(-14 0)">
+          <path class="trousers" d="M52 98 L80 98 L84 180 L72 180 L66 124 L62 180 L50 180 Z"/>
+          <path class="boot" d="M46 172 L64 172 L66 182 L44 182 Z M70 172 L88 172 L90 182 L68 182 Z"/>
+          <!-- raised arm holding the phone -->
+          <path class="jacket" d="M54 28 L44 22 L26 -26 L36 -30 L52 12 Z"/>
+          <rect class="cuff" x="24" y="-36" width="12" height="8" rx="2" transform="rotate(-20 30 -32)"/>
+          <rect class="phone" x="20" y="-62" width="14" height="24" rx="3" transform="rotate(-12 27 -50)"/>
+          <!-- body -->
+          <path class="jacket" d="M48 22 L84 22 L88 100 L44 100 Z"/>
+          <path class="shirt" d="M60 22 L72 22 L70 72 L62 72 Z"/>
+          <path class="tie" d="M64 24 L68 24 L70 62 L66 68 L62 62 Z"/>
+          <path class="pocket" d="M76 40 L84 40 L82 46 Z"/>
+          <!-- arm to the handlebars -->
+          <path class="jacket" d="M78 26 L106 30 L108 40 L78 40 Z"/>
+          <!-- helmet with sunglasses -->
+          <g class="helmet">
+            <circle cx="66" cy="-2" r="21" class="shell"/>
+            <path class="stripe" d="M48 -10 Q66 -26 84 -10 L82 -4 Q66 -18 50 -4 Z"/>
+            <path class="peak" d="M74 -22 L96 -16 L94 -10 L76 -14 Z"/>
+            <rect class="shades" x="62" y="-4" width="26" height="9" rx="3"/>
+            <path class="chin" d="M70 10 L86 8 L84 20 L70 18 Z"/>
+          </g>
+        </g></g>
+
+        <!-- the quad, stood up on its back wheels -->
         <g class="quad__body">
-          <!-- far-side wheels (it's a quad, so two more peek out behind) -->
           <circle cx="84" cy="146" r="28" class="tyre tyre--far"/>
           <circle cx="232" cy="152" r="22" class="tyre tyre--far"/>
-          <!-- rear wheel -->
           <g class="quad__wheel">
             <circle cx="72" cy="150" r="30" class="tyre"/>
-            <circle cx="72" cy="150" r="13" class="rim"/>
-            <path d="M72 137v26M59 150h26M63 141l18 18M81 141l-18 18" class="spokes"/>
+            <circle cx="72" cy="150" r="14" class="rim"/>
+            <circle cx="72" cy="150" r="5" class="hub"/>
           </g>
-          <!-- front wheel -->
           <g class="quad__wheel">
             <circle cx="222" cy="156" r="24" class="tyre"/>
-            <circle cx="222" cy="156" r="10" class="rim"/>
-            <path d="M222 146v20M212 156h20M215 149l14 14M229 149l-14 14" class="spokes"/>
+            <circle cx="222" cy="156" r="11" class="rim"/>
+            <circle cx="222" cy="156" r="4" class="hub"/>
           </g>
-          <!-- chassis -->
           <path class="frame" d="M48 128 L104 114 L176 116 L238 128 L232 140 L180 140 L150 150 L104 150 L60 142 Z"/>
-          <path class="plastics" d="M40 122 Q70 98 110 110 L104 122 Q72 112 48 132 Z"/>
+          <path class="rack" d="M196 112 L244 120 M200 104 L246 114 M206 104 L204 116 M226 108 L224 120"/>
+          <path class="plastics plastics--dark" d="M40 122 Q70 98 110 110 L104 122 Q72 112 48 132 Z"/>
           <path class="plastics" d="M176 112 Q214 100 250 122 L240 132 Q212 116 180 124 Z"/>
           <rect class="seat" x="98" y="100" width="62" height="12" rx="6"/>
-          <!-- handlebars -->
-          <path class="bars" d="M188 116 L200 78 M192 80 L212 74"/>
-          <!-- rider -->
-          <path class="leg" d="M128 106 L168 112 L182 140 L172 144 L160 122 L124 120 Z"/>
-          <path class="boot" d="M168 136 L190 136 L190 146 L170 146 Z"/>
-          <path class="torso" d="M108 104 L128 58 L150 58 L150 66 L134 106 Z"/>
-          <path class="shirt" d="M133 60 L145 60 L139 82 Z"/>
-          <path class="tie" d="M138 62 L141 62 L142 78 L139 81 L137 78 Z"/>
-          <path class="arm" d="M142 66 L178 80 L202 80 L202 88 L176 88 L140 76 Z"/>
-          <!-- helmet -->
-          <g class="helmet">
-            <circle cx="140" cy="40" r="20" class="shell"/>
-            <path class="peak" d="M148 22 L178 30 L176 36 L150 32 Z"/>
-            <path class="visor" d="M146 34 L162 36 L160 46 L144 44 Z"/>
-            <path class="chin" d="M150 50 L166 52 L160 62 L148 58 Z"/>
-          </g>
+          <path class="bars" d="M168 116 L178 80 M170 82 L190 76"/>
         </g>
       </svg>
     </div>
